@@ -125,3 +125,19 @@ const mapBtn = document.getElementById("mapBtn");
 mapBtn.addEventListener("click", () => {
   document.getElementById("mapLink").click();
 });
+
+// =======================
+// BOTON MUTE MUSICA
+// =======================
+const muteBtn = document.getElementById("muteBtn");
+
+muteBtn.addEventListener("click", () => {
+  if (music.muted) {
+    music.muted = false;
+    muteBtn.innerHTML = "🔊 Música: ON";
+  } else {
+    music.muted = true;
+    muteBtn.innerHTML = "🔇 Música: OFF";
+  }
+});
+
