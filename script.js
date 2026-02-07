@@ -1,10 +1,29 @@
 // =======================
+// CAMBIO DE PANTALLAS + MUSICA
+// =======================
+const screen1 = document.getElementById("screen1");
+const screen2 = document.getElementById("screen2");
+const startBtn = document.getElementById("startBtn");
+const music = document.getElementById("music");
+
+startBtn.addEventListener("click", () => {
+  // intentar reproducir música
+  music.volume = 0.6;
+  music.play();
+
+  // cambiar pantalla
+  screen1.classList.remove("active");
+  screen2.classList.add("active");
+});
+
+
+// =======================
 // CUENTA REGRESIVA
 // =======================
 const countdownEl = document.getElementById("countdown");
 
 function updateCountdown() {
-  const eventDate = new Date("2026-03-28T21:00:00"); 
+  const eventDate = new Date("2026-03-28T21:00:00"); // cambiar año/hora si querés
   const now = new Date();
   const diff = eventDate - now;
 
