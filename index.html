@@ -2,92 +2,55 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Te invito a mi cumpleañito 💙</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Fuente -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
+  <title>Invitación Cumpleañito 💙</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- 🌌 ESTRELLAS -->
+  <!-- Fondo estrellas -->
   <div class="stars"></div>
 
-  <!-- 🎉 HERO -->
-  <section class="hero">
-    <h1 class="title">💙 Te invito a mi cumpleañito 💙</h1>
+  <!-- Confetti -->
+  <canvas id="confetti"></canvas>
 
-    <p class="subtitle">
-      Sábado 28 de marzo · Villa Crespo · Por la noche  
-      <br>(horario a confirmar)
-    </p>
+  <div class="container">
 
-    <button id="playMusic" class="btn wiggle">
-      ▶️ Tocar para empezar
-    </button>
-  </section>
+    <h1 class="title">Te invito a mi cumpleañito 💙🩵</h1>
 
-  <!-- 🎶 MUSICA -->
-  <div id="musicContainer"></div>
+    <h2 class="subtitle">
+      Sábado 28 de marzo - Villa Crespo - Por la noche (horario a confirmar)
+    </h2>
 
-  <!-- ⏳ CUENTA REGRESIVA -->
-  <section class="countdown fade-in">
-    <h2>Falta solo…</h2>
-    <div id="timer"></div>
-  </section>
+    <div class="info-box">
+      <p class="info-text">
+        Te invito a hacer lo que más me gusta:
+      </p>
+      <p class="big-text">🍸 ALCOHOLIZARME 🍸</p>
+    </div>
 
-  <!-- 💙 INFO -->
-  <section class="info fade-in">
-    <h2>La data importante</h2>
-
-    <p>📅 <strong>Fecha:</strong> 28 de marzo</p>
-    <p>🕘 <strong>Horario:</strong> por la noche (a confirmar)</p>
-    <p>📍 <strong>Zona:</strong> Villa Crespo</p>
-
-    <p class="plan">
-      🍸 <strong>Plan:</strong> te invito a hacer lo que más me gusta  
-      <br><span>ALCOHOLIZARME</span>
-    </p>
-  </section>
-
-  <!-- ✅ RSVP -->
-  <section class="rsvp fade-in">
-    <h2>¿Venís?</h2>
+    <div class="countdown-box">
+      <h3>⏳ Cuenta regresiva</h3>
+      <p id="countdown"></p>
+    </div>
 
     <button id="confirmBtn" class="btn big pulse">
       💌 Confirmar asistencia
     </button>
 
-    <!-- FORM -->
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSdaBa4VO94UiiwPl5gE_wkZf_CGxLzvHIEMUCcL0pEqyF65wA/viewform?embedded=true
-      width="100%"
-      height="500"
-      frameborder="0">
-    </iframe>
-  </section>
+    <button id="mapBtn" class="btn big map-btn">
+      🗺️ El mapa para que no te pierdas
+    </button>
 
-  <!-- 🗺️ MAPA -->
-  <section class="map fade-in">
-    <h2>📍 Ubicación</h2>
+    <p id="message" class="message"></p>
 
-    <iframe
-      src="PEGAR_ACA_LINK_DE_GOOGLE_MAPS"
-      width="100%"
-      height="300"
-      style="border:0;"
-      loading="lazy">
-    </iframe>
-  </section>
+  </div>
 
-  <!-- 🎊 CONFETTI -->
-  <canvas id="confetti"></canvas>
+  <!-- Links ocultos -->
+  <a id="formLink" href="https://forms.gle/12YxoXE8WXzWa2969" target="_blank" style="display:none;"></a>
+  <a id="mapLink" href="https://share.google/ggjLvX4WRMEkRLeGz" target="_blank" style="display:none;"></a>
 
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
-
