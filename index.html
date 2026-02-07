@@ -15,35 +15,64 @@
   <!-- Confetti -->
   <canvas id="confetti"></canvas>
 
-  <div class="container">
+  <!-- 🎵 AUDIO (la música) -->
+  <audio id="music" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
 
-    <h1 class="title">Te invito a mi cumpleañito 💙🩵</h1>
+  <!-- ===================== -->
+  <!-- PANTALLA 1 (Inicio) -->
+  <!-- ===================== -->
+  <div id="screen1" class="screen active">
 
-    <h2 class="subtitle">
-      Sábado 28 de marzo - Villa Crespo - Por la noche (horario a confirmar)
-    </h2>
+    <div class="container">
+      <h1 class="title">Te invito a mi cumpleañito 💙🩵</h1>
 
-    <div class="info-box">
-      <p class="info-text">
-        Te invito a hacer lo que más me gusta:
-      </p>
-      <p class="big-text">🍸 ALCOHOLIZARME 🍸</p>
+      <h2 class="subtitle">
+        Sábado 28 de marzo - Villa Crespo - Por la noche (horario a confirmar)
+      </h2>
+
+      <button id="startBtn" class="btn big pulse">
+        🎶 Tocar para comenzar
+      </button>
+
+      <p class="mini-text">⚡ Importante: esto activa la música jeje</p>
     </div>
 
-    <div class="countdown-box">
-      <h3>⏳ Cuenta regresiva</h3>
-      <p id="countdown"></p>
+  </div>
+
+  <!-- ===================== -->
+  <!-- PANTALLA 2 (Fiesta) -->
+  <!-- ===================== -->
+  <div id="screen2" class="screen">
+
+    <div class="container">
+
+      <h1 class="title small-title">WELCOME TO THE PARTY 💙✨</h1>
+
+      <div class="info-box">
+        <p class="info-text">
+          Te invito a hacer lo que más me gusta:
+        </p>
+        <p class="big-text">🍸 ALCOHOLIZARME 🍸</p>
+      </div>
+
+      <div class="countdown-box">
+        <h3>⏳ Cuenta regresiva</h3>
+        <p id="countdown"></p>
+      </div>
+
+      <button id="confirmBtn" class="btn big pulse">
+        💌 Confirmar asistencia
+      </button>
+
+      <button id="mapBtn" class="btn big map-btn">
+        🗺️ El mapa para que no te pierdas
+      </button>
+
+      <p id="message" class="message"></p>
+
     </div>
-
-    <button id="confirmBtn" class="btn big pulse">
-      💌 Confirmar asistencia
-    </button>
-
-    <button id="mapBtn" class="btn big map-btn">
-      🗺️ El mapa para que no te pierdas
-    </button>
-
-    <p id="message" class="message"></p>
 
   </div>
 
