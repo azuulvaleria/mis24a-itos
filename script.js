@@ -1,18 +1,31 @@
 // =======================
-// CAMBIO DE PANTALLAS + MUSICA
+// PANTALLAS + MUSICA
 // =======================
 const screen1 = document.getElementById("screen1");
 const screen2 = document.getElementById("screen2");
+const screen3 = document.getElementById("screen3");
+
 const startBtn = document.getElementById("startBtn");
+const faqBtn = document.getElementById("faqBtn");
+const backBtn = document.getElementById("backBtn");
+
 const music = document.getElementById("music");
 
 startBtn.addEventListener("click", () => {
-  // intentar reproducir música
   music.volume = 0.6;
   music.play();
 
-  // cambiar pantalla
   screen1.classList.remove("active");
+  screen2.classList.add("active");
+});
+
+faqBtn.addEventListener("click", () => {
+  screen2.classList.remove("active");
+  screen3.classList.add("active");
+});
+
+backBtn.addEventListener("click", () => {
+  screen3.classList.remove("active");
   screen2.classList.add("active");
 });
 
@@ -23,7 +36,7 @@ startBtn.addEventListener("click", () => {
 const countdownEl = document.getElementById("countdown");
 
 function updateCountdown() {
-  const eventDate = new Date("2026-03-28T21:00:00"); // cambiar año/hora si querés
+  const eventDate = new Date("2026-03-28T21:00:00");
   const now = new Date();
   const diff = eventDate - now;
 
@@ -118,15 +131,6 @@ confirmBtn.addEventListener("click", () => {
 
 
 // =======================
-// BOTON MAPA
-// =======================
-const mapBtn = document.getElementById("mapBtn");
-
-mapBtn.addEventListener("click", () => {
-  document.getElementById("mapLink").click();
-});
-
-// =======================
 // BOTON MUTE MUSICA
 // =======================
 const muteBtn = document.getElementById("muteBtn");
@@ -140,4 +144,3 @@ muteBtn.addEventListener("click", () => {
     muteBtn.innerHTML = "🔇 Música: OFF";
   }
 });
-
