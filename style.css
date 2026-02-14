@@ -76,7 +76,7 @@ body::before {
   z-index: 5;
   text-align: center;
   padding: 50px 20px;
-  max-width: 650px;
+  max-width: 720px;
   margin: auto;
 }
 
@@ -164,7 +164,7 @@ body::before {
   padding: 15px 25px;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 20px;
   background: #1e90ff;
   color: white;
   transition: 0.3s;
@@ -176,7 +176,7 @@ body::before {
   background: #48a9ff;
 }
 
-/* Botón mapa */
+/* Botones alternativos */
 .map-btn {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -208,7 +208,7 @@ body::before {
 /* Texto mini */
 .mini-text {
   margin-top: 15px;
-  opacity: 0.8;
+  opacity: 0.85;
   font-size: 0.95rem;
 }
 
@@ -219,4 +219,58 @@ body::before {
   left: 0;
   pointer-events: none;
   z-index: 9999;
+}
+
+/* FAQ */
+.faq {
+  margin-top: 30px;
+  text-align: left;
+}
+
+details {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 15px 18px;
+  margin-bottom: 15px;
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+details p {
+  margin-top: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+/* Links */
+.link {
+  color: #7fc7ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Recomendaciones */
+.reco-box {
+  margin-top: 35px;
+  padding: 22px;
+  border-radius: 20px;
+  background: rgba(0, 140, 255, 0.18);
+  border: 1px solid rgba(0, 140, 255, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.reco-box h2 {
+  margin-top: 0;
 }
